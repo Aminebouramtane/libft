@@ -2,7 +2,7 @@
 
 int main(){
 	int a = 55;
-	char b = "amine";
+	char b[] = "amine";
 	printf("%d \n", ft_isalpha(a));
 	printf("%d \n", ft_isdigit(a));
 	printf("%d \n", isdigit(a));
@@ -14,6 +14,6 @@ int main(){
 	printf("%d \n", ft_isprint(a));
 	printf("%d \n", isprint(a));
 	printf("====================== \n");
-	printf("%d \n", ft_strlen(b));
-	printf("%d \n", strlen(b));
+	printf("%zu \n", ft_strlen(b));
+	printf("%zu \n", strlen(b));
 }
