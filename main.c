@@ -3,6 +3,7 @@
 int main(){
 	int a = 55;
 	char b[] = "amine";
+	char c[5];
 	printf("%d \n", ft_isalpha(a));
 	printf("%d \n", ft_isdigit(a));
 	printf("%d \n", isdigit(a));
@@ -16,4 +17,7 @@ int main(){
 	printf("====================== \n");
 	printf("%zu \n", ft_strlen(b));
 	printf("%zu \n", strlen(b));
+	printf("====================== \n");
+	printf("%zu \n", ft_strlcpy(c,b,5));
+	printf("%lu \n", strlcpy(c,b,5));
 }

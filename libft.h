@@ -9,3 +9,4 @@ int ft_isalnum(int c);
 int ft_isascii(int c);
 int	ft_isprint(int c);
 size_t ft_strlen(char *c);
+size_t	ft_strlcpy(char *dest, char *src, size_t size);
