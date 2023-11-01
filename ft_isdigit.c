@@ -6,11 +6,15 @@
 /*   By: abouramt <abouramt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:22:04 by abouramt          #+#    #+#             */
-/*   Updated: 2023/11/01 14:22:09 by abouramt         ###   ########.fr       */
+/*   Updated: 2023/11/01 15:33:55 by abouramt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-
+int	ft_isdigit(int c)
+{
+	if('0' <= c && '9' >= c)
+		return 1;
+	return 0;
+}
