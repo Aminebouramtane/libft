@@ -23,4 +23,9 @@ int main(){
 	printf("====================== \n");
 	printf("%zu \n", ft_strlcat(c,b,7));
 	printf("%lu \n", strlcat(c,b,7));
+	printf("====================== \n");
+	printf("%c \n", ft_tolower(97));
+	printf("%c \n", tolower(97));
+	printf("%c \n", ft_toupper(71));
+	printf("%c \n", toupper(71));
 }
