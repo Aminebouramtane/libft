@@ -28,4 +28,7 @@ int main(){
 	printf("%c \n", tolower(97));
 	printf("%c \n", ft_toupper(71));
 	printf("%c \n", toupper(71));
+	printf("====================== \n");
+	printf("%d \n", ft_strncmp(b,c,22));
+	printf("%d \n", strncmp(b,c,22));
 }
