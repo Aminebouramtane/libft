@@ -13,5 +13,3 @@ void *ft_memset(void *b, int c, size_t len)
     }
     return b;
 }
-
-// 00000100 00000100 00000100 00000100 

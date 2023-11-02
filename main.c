@@ -34,7 +34,10 @@ int main(){
 	// printf("====================== \n");
 	// printf("%s \n", ft_strnstr(b,c,5));
 	// printf("%s \n", strnstr(b,c,5));
-	printf("====================== \n");
-	printf("%d \n", ft_atoi("--42"));
-	printf("%d \n", atoi("--42"));
+	// printf("====================== \n");
+	// printf("%d \n", ft_atoi("--42"));
+	// printf("%d \n", atoi("--42"));
+	// printf("====================== \n");
+	// printf("%d \n", ft_memcpy());
+	// printf("%d \n", memcpy());
 }
