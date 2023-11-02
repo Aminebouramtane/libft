@@ -2,8 +2,8 @@
 
 int main(){
 	// int a = 55;
-	char b[] = "tamine";
-	char c[] = "amine";
+	// char b[] = "tamine";
+	// char c[] = "amine";
 	// printf("%d \n", ft_isalpha(a));
 	// printf("%d \n", ft_isdigit(a));
 	// printf("%d \n", isdigit(a));
@@ -31,7 +31,10 @@ int main(){
 	// printf("====================== \n");
 	// printf("%d \n", ft_strncmp(b,c,22));
 	// printf("%d \n", strncmp(b,c,22));
+	// printf("====================== \n");
+	// printf("%s \n", ft_strnstr(b,c,5));
+	// printf("%s \n", strnstr(b,c,5));
 	printf("====================== \n");
-	printf("%s \n", ft_strnstr(b,c,5));
-	printf("%s \n", strnstr(b,c,5));
+	printf("%d \n", ft_atoi("--42"));
+	printf("%d \n", atoi("--42"));
 }
