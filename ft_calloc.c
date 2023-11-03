@@ -4,7 +4,7 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	char	*ptr;
-	site_t	mult;
+	int	mult;
 
 	if (count == 0 && size == 0)
 	{
@@ -12,10 +12,10 @@ void	*ft_calloc(size_t count, size_t size)
 		size = 1;
 	}
 	mult = count * size;
-	b = malloc(mult);
-	if (p == NULL)
+	ptr = malloc(mult);
+	if (ptr == NULL)
 		return (NULL);
 	else
-		ft_bzero(p,mult);
-	return (p);
+		ft_bzero(ptr,mult);
+	return (ptr);
 }

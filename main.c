@@ -2,8 +2,8 @@
 
 int main(){
 	// int a = 55;
-	char b[] = "tamine";
-	char c[] = "zamifdfne";
+	char b[] = "d";
+	// char c[] = "zamifdfne";
 	// printf("%d \n", ft_isalpha(a));
 	// printf("%d \n", ft_isdigit(a));
 	// printf("%d \n", isdigit(a));
@@ -40,7 +40,10 @@ int main(){
 	// printf("====================== \n");
 	// printf("%d \n", ft_memcpy());
 	// printf("%d \n", memcpy());
+	// printf("====================== \n");
+	// printf("%d \n", ft_memcmp(b,c,5));
+	// printf("%d \n", memcmp(b,c,5));
 	printf("====================== \n");
-	printf("%d \n", ft_memcmp(b,c,5));
-	printf("%d \n", memcmp(b,c,5));
+	printf("%s \n", ft_strdup(b));
+	printf("%s \n", strdup(b));
 }

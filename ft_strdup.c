@@ -2,22 +2,18 @@
 
 #include "libft.h"
 
-char    *strdup(const char *s1)
+char    *ft_strdup(const char *s1)
 {
 	int		i;
 	int		j;
 	char	*tab;
 
-	i = 0;
-	while (src[i])
-	{
-		i++;
-	}
+	i = ft_strlen(s1);
 	tab = (char *) malloc(sizeof(char) * (i + 1));
 	j = 0;
 	while (j < i)
 	{
-		tab[j] = src[j];
+		tab[j] = s1[j];
 		j++;
 	}
 	tab[j] = '\0';
