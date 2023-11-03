@@ -1,2 +1,2 @@
 # libft
-xxx
+xx
