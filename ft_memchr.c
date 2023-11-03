@@ -2,9 +2,9 @@
 
 #include "libft.h"
 
-void    *memchr(const void *s, int c, size_t n)
+void    *ft_memchr(const void *s, int c, size_t n)
 {
-	int	i;
+	size_t	i;
     char    *ptr;
 
     i = 0;
