@@ -26,5 +26,3 @@ char	*ft_substr(char const *s, unsigned int start,size_t len)
 	ptr[j] = '\0';
 	return (ptr);
 }
-
-// hello world, 6, 6
