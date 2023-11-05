@@ -22,9 +22,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		ptr[i] = s1[i];
 		i++;
 	}
-	while (s2[i])
+	while (s2[j])
 	{
-		ptr[i + j] = s2[i];
+		ptr[i + j] = s2[j];
 		j++;
 	}
 	ptr[i + j] = '\0';
