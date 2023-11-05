@@ -3,7 +3,7 @@
 int main(){
 	// int a = 55;
 	char b[] = "d";
-	// char c[] = "zamifdfne";
+	char c[] = "zamifdfne";
 	// printf("%d \n", ft_isalpha(a));
 	// printf("%d \n", ft_isdigit(a));
 	// printf("%d \n", isdigit(a));
@@ -43,7 +43,9 @@ int main(){
 	// printf("====================== \n");
 	// printf("%d \n", ft_memcmp(b,c,5));
 	// printf("%d \n", memcmp(b,c,5));
+	// printf("====================== \n");
+	// printf("%s \n", ft_strdup(b));
+	// printf("%s \n", strdup(b));
 	printf("====================== \n");
-	printf("%s \n", ft_strdup(b));
-	printf("%s \n", strdup(b));
+	printf("%s \n", ft_strjoin(b,c));
 }
