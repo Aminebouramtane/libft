@@ -2,8 +2,8 @@
 
 int main(){
 	// int a = 55;
-	char b[] = "amine";
-	char c[] = "bouramtane";
+	char b[] = "    amine  	";
+	char c[] = " ";
 	// printf("%d \n", ft_isalpha(a));
 	// printf("%d \n", ft_isdigit(a));
 	// printf("%d \n", isdigit(a));
@@ -47,5 +47,5 @@ int main(){
 	// printf("%s \n", ft_strdup(b));
 	// printf("%s \n", strdup(b));
 	printf("====================== \n");
-	printf("%s \n", ft_strjoin(b,c));
+	printf("%s \n", ft_strtrim(b,c));
 }
