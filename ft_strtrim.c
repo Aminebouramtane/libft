@@ -7,7 +7,7 @@ char    *ft_strtrim(char const *s1, char const *set)
 {
     size_t  i;
     size_t  j;
-    char    *ptr;
+    char    *ptr = NULL;
 
     if (s1 != 0 && set != 0)
     {

@@ -1,9 +1,11 @@
+
+
 #include "libft.h"
 
 int main(){
 	// int a = 55;
-	char b[] = "    amine  	";
-	char c[] = " ";
+	// char b[] = "    amine  	";
+	// char c[] = " ";
 	// printf("%d \n", ft_isalpha(a));
 	// printf("%d \n", ft_isdigit(a));
 	// printf("%d \n", isdigit(a));
@@ -40,12 +42,26 @@ int main(){
 	// printf("====================== \n");
 	// printf("%d \n", ft_memcpy());
 	// printf("%d \n", memcpy());
+
+	printf("====================== \n");
+	int a = 0;
+	void *p = &a;
+	ft_memset(p, 57, 1);
+	ft_memset((unsigned char *)p+1 , 5, 1);
+	printf("%d \n", a);
+	
 	// printf("====================== \n");
 	// printf("%d \n", ft_memcmp(b,c,5));
 	// printf("%d \n", memcmp(b,c,5));
 	// printf("====================== \n");
 	// printf("%s \n", ft_strdup(b));
 	// printf("%s \n", strdup(b));
-	printf("====================== \n");
-	printf("%s \n", ft_strtrim(b,c));
+	// printf("====================== \n");
+	// printf("%s \n", ft_strtrim(b,c));
+	// printf("====================== \n");
+	// printf("%s \n", ft_itoa(-32));
+	// 1337 
+	// 000000000  0000000 0000000 0000000
+
+	//                      101  00111001
 }

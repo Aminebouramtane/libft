@@ -9,31 +9,41 @@ char *ft_itoa(int n)
     char    *ptr;
 
     _int = n;
-    if (n <= 0)
-        len = 2;
-    else
-        len = 1;
-    
-    while (_int)
+    len = 0;
+
+    if (_int == 0)
     {
-        len ++;
-        _int = _int / 10;
+        ptr = (char *)malloc(sizeof(char)*2);
+        if (ptr == NULL)
+            return (NULL);
+        ptr[0] = '0';
+        ptr[1] = '\0';
+        return (ptr);
     }
-    ptr = (char *)malloc(sizeof(char) * len);
+    if(_int < 0)
+    {
+        len++;
+        _int *= -1;
+    }
+    long temp = _int;
+    while (temp != 0)
+    {
+        temp /= 10;
+        len ++;
+    }
+    ptr = (char *)malloc(sizeof(char) * (len + 2));
     if (ptr == NULL)
         return (NULL);
-    ptr[len - 1] = '\0';
-    if (_int <= 0)
+    ptr[len + 1] = '\0';
+
+    if (_int == 0)
+        ptr[0] = '0';
+    else if (n < 0)
+        ptr[0] = '-';
+
+    while (_int != 0)
     {
-        if (_int < 0)
-            ptr[0] = '-';
-        else
-            ptr[0] = '0';
-    }
-    while (_int)
-    {
-        ptr[len] = (_int % 10) + '0';
-        len--;
+        ptr[--len] = (_int % 10) + '0';
         _int /= 10;
     }
     return (ptr);
