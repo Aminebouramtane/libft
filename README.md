@@ -1,2 +1,2 @@
-# libft
-first project 1337
+# 1337
+first project libft
