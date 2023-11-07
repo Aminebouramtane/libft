@@ -1,50 +1,69 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abouramt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/07 14:55:12 by abouramt          #+#    #+#             */
+/*   Updated: 2023/11/07 17:22:04 by abouramt         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+static int	count_digits(long n)
 {
-    long    _int;
-    int len;
-    char    *ptr;
+	int	count;
 
-    _int = n;
-    len = 0;
+	count = 0;
+	while (n != 0)
+	{
+		n /= 10;
+		count++;
+	}
+	return (count);
+}
 
-    if (_int == 0)
-    {
-        ptr = (char *)malloc(sizeof(char)*2);
-        if (ptr == NULL)
-            return (NULL);
-        ptr[0] = '0';
-        ptr[1] = '\0';
-        return (ptr);
-    }
-    if(_int < 0)
-    {
-        len++;
-        _int *= -1;
-    }
-    long temp = _int;
-    while (temp != 0)
-    {
-        temp /= 10;
-        len ++;
-    }
-    ptr = (char *)malloc(sizeof(char) * (len + 2));
-    if (ptr == NULL)
-        return (NULL);
-    ptr[len + 1] = '\0';
+static char	*convert(long num, int is_negative)
+{
+	int		digits;
+	char	*str;
 
-    if (_int == 0)
-        ptr[0] = '0';
-    else if (n < 0)
-        ptr[0] = '-';
+	digits = count_digits(num);
+	if (digits == 0)
+		digits = 1;
+	if (is_negative)
+		digits++;
+	str = (char *)malloc(sizeof(char) * (digits + 1));
+	if (!str)
+		return (NULL);
+	str[digits--] = '\0';
+	if (num == 0)
+		str[0] = '0';
+	while (num > 0)
+	{
+		str[digits--] = (num % 10) + '0';
+		num /= 10;
+	}
+	if (is_negative)
+		str[0] = '-';
+	return (str);
+}
 
-    while (_int != 0)
-    {
-        ptr[--len] = (_int % 10) + '0';
-        _int /= 10;
-    }
-    return (ptr);
+char	*ft_itoa(int n)
+{
+	long	num;
+	int		is_negative;
+	char	*str;
+
+	num = n;
+	is_negative = 0;
+	if (num < 0)
+	{
+		is_negative = 1;
+		num = -num;
+	}
+	str = convert(num, is_negative);
+	return (str);
 }

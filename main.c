@@ -43,15 +43,15 @@ int main(){
 	// printf("%d \n", ft_memcpy());
 	// printf("%d \n", memcpy());
 
-	printf("====================== \n");
+	//printf("====================== \n");
 	// int a = 0;
 	// void *p = &a;
 	// ft_memset(p, 57, 1);
 	// ft_memset((unsigned char *)p+1 , 5, 1);
 	// printf("%d \n", a);
-	int ao[] = {-49, 49, 1, -9};
-	char *ab = memchr(&ao, -1, 2);
-	printf("%d \n", *((char *) ab));
+	// int ao[] = {-49, 49, 1, -9};
+	// char *ab = memchr(&ao, -1, 2);
+	// printf("%d \n", *((char *) ab));
 
 	// printf("====================== \n");
 	// printf("%d \n", ft_memcmp(b,c,5));
@@ -62,9 +62,6 @@ int main(){
 	// printf("====================== \n");
 	// printf("%s \n", ft_strtrim(b,c));
 	// printf("====================== \n");
-	// printf("%s \n", ft_itoa(-32));
-	// 1337 
-	// 000000000  0000000 0000000 0000000
-
-	//                      101  00111001
+	printf("%s \n", ft_itoa(-32));
+	return (0);
 }
